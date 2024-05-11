@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     # Checks that the markdown file exists and is a file
     if not (os.path.exists(input_file) and os.path.isfile(input_file)):
-        print(f'Missing {input_file}', file=sys.stderr)
+        print(f'Missing {input_file}, file=sys.stderr)
         sys.exit(1)
 
     with open(input_file, encoding='utf-8') as file_1:
