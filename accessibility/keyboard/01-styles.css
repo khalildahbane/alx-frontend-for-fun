@@ -664,7 +664,6 @@
   .card-work .card-title {
     text-align: center;
     margin: 0;
-    opacity: 0;
     height: 100%;
     position: relative;
   }
@@ -691,10 +690,6 @@
     content: '';
   }
   
-  .card-work:hover .card-title {
-    opacity: 1;
-  }
-  
   @media only screen and (max-width: 767px) {
   
     .card-work .card-inner {
@@ -708,11 +703,8 @@
   
     .card-work .card-title a {
       display: block;
+      opacity: 0;
       padding: 2rem 1rem 0 1rem;
-    }
-  
-    .card-work:hover .card-inner {
-      background-color: transparent;
     }
   
     .card-work:hover .card-image {
